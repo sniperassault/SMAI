@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:background="#6C935C"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#6C935C"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/btnRotar2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.05"
+                android:src="@drawable/ic_rotar"/>
+            <TextView
+                android:id="@+id/txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.90"
+                android:text="FEDERER"
+                android:textColor="#FFFF00"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:textSize="24dp"/>
+
+            <ImageView
+                android:id="@+id/btnRotar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.05"
+                android:src="@drawable/ic_rotar"/>
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/sm_init" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnPar"
+                android:layout_width="25dp"
+                android:layout_height="75dp"
+                android:layout_marginHorizontal="25dp"
+                android:layout_weight="0.5"
+                android:text="Serve to Right box " />
+
+            <Button
+                android:id="@+id/btnImpar"
+                android:layout_width="25dp"
+                android:layout_height="75dp"
+                android:layout_marginHorizontal="25dp"
+                android:layout_weight="0.5"
+                android:text="Serve to left box" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnResto"
+                android:layout_width="25dp"
+                android:layout_height="75dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_weight="0.5"
+                android:text="return" />
+
+            <Button
+                android:id="@+id/btnRs"
+                android:layout_width="25dp"
+                android:layout_height="75dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_weight="0.5"
+                android:text="return of serve" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
